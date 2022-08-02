@@ -1,0 +1,303 @@
+:root{
+    --vermelho:#e50914;
+    --preto:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ELEMENTOS BASE*/
+
+body{
+    width: 100%;
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+
+}
+
+header .container{
+    padding: 20px;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+}
+
+header .logo{
+    letter-spacing:3px;
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family:bebas neue;
+    font-size: 50px;
+}
+
+
+header nav a{
+    transition: .3s ease all;
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 20px;
+    
+    
+}
+header nav a:hover{
+    color: var(--vermelho);
+}
+
+
+
+img{
+cursor: pointer;
+}
+
+.user{
+    width: auto;
+}
+
+
+
+/* FILME PRINCIPAL*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/fundo_mr_roboot.jpg');
+
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo{
+    letter-spacing:2px;
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.box-filme:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* 
+    position:relative;top:0;padding:4px;
+    transition: all .2s ease-in-out
+}
+
+.box-filme:hover{top:-4px;box-shadow:0 4px 3px #999}
+ */
+
+.series{
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.filmes{
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.doc{
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.titulo-cat{
+    transition: .3s ease all;
+    letter-spacing:3px;
+    font-family: bebas neue;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
+    cursor: pointer;
+}
+
+.titulo-cat:hover{
+    color: var(--vermelho);
+}
+
+.box-filme{
+    transition: .3s ease all;
+    cursor: pointer;
+}
+.box-filme:hover{
+    size: 30%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #aaa;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease all;
+    letter-spacing:2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+  
+    
+    cursor: pointer;
+}
+
+footer a:hover{
+    color: var(--vermelho);
+}
+
+.fa-brands{
+    padding-right: 10px;
+    
+}
+
+
+/*CSS DA PAGINA INICIAL LOGIN*/
+
+.header{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1790px;
+    top: 28px;
+    left: 56px;
+}
+.header a{
+    display: inline-block;
+    background: var(--vermelho);
+    color: white;
+    font-size:16px;
+    align-self: flex-start;
+    padding: 8px 18px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+
+.main{
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,.80),rgba(0,0,0,.80)100%), url('/img/pagina_login/bg.png');
+    text-align: center;
+}
+
+.main div{
+    display: grid;
+    justify-items: center;
+}
+
+.main h1{
+    font-size: 64px;
+    max-width: 510px;
+}
+
+.main span{
+    font-size: 26px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.form-cta{
+    display: grid;
+    grid-template-columns: 500px 250px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+
+.form-cta input{
+    padding: 20px 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.form-cta button{
+    background: var(--vermelho);
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.form-cta button::after{
+    content:"";
+    width: 9px;
+    height: 10px;
+    background: url("../img/pagina_login/seta.svg");
+    color: white;
+    
+}
+
